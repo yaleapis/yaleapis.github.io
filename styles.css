@@ -26,18 +26,25 @@ img {
     width: 500px;
     max-width: 95vw;
 }
-.list {
-
+p {
+    color: #00356b;
+    font-size: 20px;
+}
+#list {
+    margin-top: 10px;
 }
 .item {
     vertical-align: top;
-    border: solid 1px #00356b;
+    background: linear-gradient(#00356b, #194979);
     border-radius: 15px;
-    padding: 15px;
+    padding: 15px 20px;
     display: inline-block;
+    color: white;
+    margin-bottom: 10px;
+    margin-right: 5px;
 }
 .item.unofficial {
-    border-color: #00d018;
+    background: linear-gradient(#00D018, #32D946);
 }
 .item .body {
     display: none;
@@ -48,9 +55,20 @@ img {
 }
 h2 {
     font-size: 25px;
+    user-select: none;
+    cursor: pointer;
 }
-p {
-
+h2::after {
+    content: '▼';
+    margin-left: 5px;
+}
+.item.open h2::after {
+    content: '▲';
+}
+h3 {
+    font-size: 35px;
+    margin-top: 10px;
+    font-style: italic;
 }
 a {
     color: inherit;
