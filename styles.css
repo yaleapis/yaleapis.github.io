@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KExcOPIDU.woff2) format('woff2');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    border-top: solid 10px #00356b;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    text-align: left;
+}
+h1 {
+    color: #00356b;
+    font-size: 50px;
+}
+img {
+    width: 500px;
+    max-width: 95vw;
+}
+.list {
+
+}
+.item {
+    vertical-align: top;
+    border: solid 1px #00356b;
+    border-radius: 15px;
+    padding: 15px;
+    display: inline-block;
+}
+.item.unofficial {
+    border-color: #00d018;
+}
+.item .body {
+    display: none;
+    max-width: 6in;
+}
+.item.open .body {
+    display: block;
+}
+h2 {
+    font-size: 25px;
+}
+p {
+
+}
+a {
+    color: inherit;
+}
+label {
+    display: block;
+}
+input {
+    margin-right: 5px;
+}
+input, button {
+    cursor: pointer;
+}
+button, .button {
+    display: inline-block;
+    font: inherit;
+    background: none;
+    border: solid 2px #00356b;
+    color: #00356b;
+    padding: 5px 8px;
+    margin-top: 5px;
+}
